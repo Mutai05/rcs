@@ -1,0 +1,19 @@
+<div class="border-top bg-light mt-auto">
+  <footer class="container py-4 small text-muted d-flex justify-content-between align-items-center">
+    <div>
+      © <span id="year"></span> Trans Nzoia County Government. All Rights Reserved.
+    </div>
+    <div>
+      <a href="#" data-href="/about.html" class="text-muted me-3">About</a>
+      <a href="#" data-href="/contact.html" class="text-muted">Contact</a>
+    </div>
+  </footer>
+</div>
+<script>
+  (function(){
+    var basePath = window.__BASE_PATH__ || '.';
+    document.querySelectorAll('footer a[data-href]').forEach(function(a){ a.setAttribute('href', basePath + a.getAttribute('data-href')); });
+    var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+

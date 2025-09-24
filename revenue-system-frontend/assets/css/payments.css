@@ -1,0 +1,9 @@
+.receipt-card pre {
+  white-space: pre-wrap;
+  font-size: .9rem;
+}
+
+.payment-methods .btn {
+  min-width: 160px;
+}
+

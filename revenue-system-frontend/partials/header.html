@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#" data-href="/index.html">
+      <img src="#" data-src="/assets/img/logo.png" alt="Trans Nzoia County" height="32" class="me-2" />
+      <span class="fw-semibold">Revenue System</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#" data-href="/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-href="/contact.html">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="#" data-href="/services/parking.html">Parking</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/services/land-rates.html">Land Rates</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/services/business-permits.html">Business Permits</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown" data-roles="citizen,officer,admin,finance">
+          <a class="nav-link dropdown-toggle" href="#" id="dashboardsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboards</a>
+          <ul class="dropdown-menu" aria-labelledby="dashboardsDropdown">
+            <li><a class="dropdown-item" href="#" data-href="/dashboards/citizen-dashboard.html" data-roles="citizen">Citizen</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/dashboards/officer-dashboard.html" data-roles="officer">Officer</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/dashboards/admin-dashboard.html" data-roles="admin">Admin</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/dashboards/finance-dashboard.html" data-roles="finance">Finance</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="paymentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Payments</a>
+          <ul class="dropdown-menu" aria-labelledby="paymentsDropdown">
+            <li><a class="dropdown-item" href="#" data-href="/payments/make-payment.html">Make Payment</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/payments/payment-history.html">Payment History</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/payments/receipts.html">Receipts</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/payments/appeals.html">Appeals</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="enforcementDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Enforcement</a>
+          <ul class="dropdown-menu" aria-labelledby="enforcementDropdown">
+            <li><a class="dropdown-item" href="#" data-href="/enforcement/violations.html">Violations</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/enforcement/penalties.html">Penalties</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/enforcement/enforcement-reports.html">Reports</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="reportsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reports</a>
+          <ul class="dropdown-menu" aria-labelledby="reportsDropdown">
+            <li><a class="dropdown-item" href="#" data-href="/reports/collections-report.html">Collections</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/reports/arrears-report.html">Arrears</a></li>
+            <li><a class="dropdown-item" href="#" data-href="/reports/audit-trail.html">Audit Trail</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#" data-href="/auth/login.html">Login</a></li>
+        <li class="nav-item"><a class="btn btn-primary" href="#" data-href="/auth/register.html">Register</a></li>
+        <li class="nav-item dropdown d-none" id="profileMenu">
+          <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-user"></i> <span id="navUserName">User</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+            <li><a class="dropdown-item" href="#" data-href="/auth/profile.html">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#" id="logoutLink">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    // This script runs after partial injection to adjust hrefs and image src using BASE_PATH
+    (function() {
+      try {
+        var basePath = window.__BASE_PATH__ || '.';
+        document.querySelectorAll('a[data-href]').forEach(function(a){ a.setAttribute('href', basePath + a.getAttribute('data-href')); });
+        document.querySelectorAll('img[data-src]').forEach(function(img){ img.setAttribute('src', (basePath + img.getAttribute('data-src')).replace(/\\/g,'/')); });
+      } catch (e) { /* no-op */ }
+    })();
+  </script>
+</nav>
+

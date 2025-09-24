@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile | Trans Nzoia Revenue System</title>
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/forms.css" rel="stylesheet">
+  </head>
+  <body class="page-shell">
+    <div id="app-notifications"></div>
+    <header id="app-header"></header>
+    <div class="layout content-shell container my-4">
+      <div class="row g-4">
+        <aside class="col-lg-3" id="app-sidebar"></aside>
+        <main class="col-lg-9">
+          <div class="page-title">
+            <h1 class="h3 mb-0">My Profile</h1>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <form id="profileForm" class="form-section">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" id="profileName" class="form-control" placeholder="Jane Doe">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input type="email" id="profileEmail" class="form-control" placeholder="you@example.com">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Role (for demo)</label>
+                    <select id="roleSelect" class="form-select">
+                      <option value="citizen">Citizen</option>
+                      <option value="officer">Officer</option>
+                      <option value="admin">Admin</option>
+                      <option value="finance">Finance</option>
+                    </select>
+                    <div class="form-help">Used to toggle role-based navigation for demo.</div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <button class="btn btn-primary" type="submit">Save Changes</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer id="app-footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/auth.js"></script>
+  </body>
+  </html>
+
