@@ -1,0 +1,16 @@
+.kpi-card {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.kpi-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+

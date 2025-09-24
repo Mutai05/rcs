@@ -1,0 +1,46 @@
+<div class="sidebar border-end bg-white">
+  <div class="list-group list-group-flush rounded-0">
+    <a class="list-group-item list-group-item-action" href="#" data-href="/dashboards/citizen-dashboard.html" data-roles="citizen">
+      <i class="fa-solid fa-gauge-high me-2"></i> Citizen Dashboard
+    </a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/dashboards/officer-dashboard.html" data-roles="officer">
+      <i class="fa-solid fa-shield-halved me-2"></i> Officer Dashboard
+    </a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/dashboards/admin-dashboard.html" data-roles="admin">
+      <i class="fa-solid fa-gear me-2"></i> Admin Dashboard
+    </a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/dashboards/finance-dashboard.html" data-roles="finance">
+      <i class="fa-solid fa-sack-dollar me-2"></i> Finance Dashboard
+    </a>
+    <div class="list-group-item small text-uppercase fw-semibold text-muted">Services</div>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/services/parking.html"><i class="fa-solid fa-square-parking me-2"></i> Parking</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/services/land-rates.html"><i class="fa-solid fa-map me-2"></i> Land Rates</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/services/business-permits.html"><i class="fa-solid fa-briefcase me-2"></i> Business Permits</a>
+
+    <div class="list-group-item small text-uppercase fw-semibold text-muted">Payments</div>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/payments/make-payment.html"><i class="fa-solid fa-credit-card me-2"></i> Make Payment</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/payments/payment-history.html"><i class="fa-solid fa-clock-rotate-left me-2"></i> Payment History</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/payments/receipts.html"><i class="fa-solid fa-receipt me-2"></i> Receipts</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/payments/appeals.html"><i class="fa-solid fa-scale-balanced me-2"></i> Appeals</a>
+
+    <div class="list-group-item small text-uppercase fw-semibold text-muted">Enforcement</div>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/enforcement/violations.html"><i class="fa-solid fa-triangle-exclamation me-2"></i> Violations</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/enforcement/penalties.html"><i class="fa-solid fa-ban me-2"></i> Penalties</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/enforcement/enforcement-reports.html"><i class="fa-solid fa-file-lines me-2"></i> Reports</a>
+
+    <div class="list-group-item small text-uppercase fw-semibold text-muted">Reports</div>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/reports/collections-report.html"><i class="fa-solid fa-chart-line me-2"></i> Collections</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/reports/arrears-report.html"><i class="fa-solid fa-list-ol me-2"></i> Arrears</a>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/reports/audit-trail.html"><i class="fa-solid fa-fingerprint me-2"></i> Audit Trail</a>
+
+    <div class="list-group-item small text-uppercase fw-semibold text-muted">Account</div>
+    <a class="list-group-item list-group-item-action" href="#" data-href="/auth/profile.html"><i class="fa-solid fa-user me-2"></i> Profile</a>
+  </div>
+  <script>
+    (function(){
+      var basePath = window.__BASE_PATH__ || '.';
+      document.querySelectorAll('.sidebar a[data-href]').forEach(function(a){ a.setAttribute('href', basePath + a.getAttribute('data-href')); });
+    })();
+  </script>
+</div>
+

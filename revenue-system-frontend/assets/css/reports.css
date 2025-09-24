@@ -1,0 +1,11 @@
+.report-filters .form-select,
+.report-filters .form-control {
+  max-width: 260px;
+}
+
+.table-sticky thead th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Trans Nzoia Revenue System</title>
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/forms.css" rel="stylesheet">
+  </head>
+  <body class="page-shell">
+    <div id="app-notifications"></div>
+    <header id="app-header"></header>
+    <div class="layout content-shell container my-4">
+      <div class="row g-4">
+        <aside class="col-lg-3" id="app-sidebar"></aside>
+        <main class="col-lg-9">
+          <div class="page-title">
+            <h1 class="h3 mb-0">Contact Us</h1>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <form class="form-section">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="you@example.com">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                </div>
+                <button class="btn btn-primary" type="button" onclick="showAlert('Thanks for reaching out! We will respond shortly.','success')">Send</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer id="app-footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+  </html>
+

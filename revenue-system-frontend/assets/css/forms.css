@@ -1,0 +1,13 @@
+.form-section {
+  max-width: 560px;
+}
+
+.form-floating > label::after {
+  background: transparent;
+}
+
+.form-help {
+  font-size: .875rem;
+  color: #6c757d;
+}
+
